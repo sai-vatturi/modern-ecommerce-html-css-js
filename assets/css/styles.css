@@ -1,0 +1,143 @@
+/* Base Styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+/*
+========= NAV BAR CSS STARTS HERE ===========
+*/
+
+.header-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.091);
+	font-weight: 300;
+	position: sticky;
+	top: 0;
+	background-color: white;
+	z-index: 1000;
+}
+
+.nav-menu {
+	margin-left: 30px;
+	flex: 1;
+}
+
+.nav-links {
+	display: flex;
+}
+
+.nav-links li {
+	list-style: none;
+}
+
+.nav-links li a {
+	text-decoration: none;
+	color: black;
+	padding: 10px;
+	margin-left: 20px;
+	position: relative;
+}
+
+.nav-right {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.nav-icon {
+	margin-left: 20px;
+	color: black;
+}
+
+.hamburger {
+	display: none;
+	margin-left: 20px;
+	cursor: pointer;
+}
+
+.nav-links li a:hover {
+	font-weight: 500;
+}
+
+/* Active Tab Styling */
+.nav-links li a.active {
+	font-weight: 500;
+}
+
+.nav-links li a.active::after {
+	content: "";
+	position: absolute;
+	left: 10px;
+	bottom: -0.5px;
+	width: 80%;
+	height: 2px;
+	background-color: rgba(0, 132, 255, 0.244);
+}
+
+/*
+========= NAV BAR CSS ENDS HERE ===========
+*/
+
+/*
+========= HERO SECTION STARTS HERE ===========
+*/
+
+.hero-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 100px 20px;
+}
+
+.hero-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.hero-image {
+	flex: 1;
+}
+
+@media (max-width: 800px) {
+	/*
+========= NAV BAR CSS STARTS HERE ===========
+*/
+
+	.nav-menu {
+		display: none;
+	}
+
+	.hamburger {
+		display: block;
+	}
+
+	/* Show nav-links when hamburger is active */
+	.nav-menu.active {
+		display: block;
+		position: absolute;
+		top: 70px;
+		left: 0;
+		width: 100%;
+		background-color: white;
+	}
+
+	.nav-links {
+		flex-direction: column;
+		align-items: center;
+		gap: 25px;
+		padding-bottom: 40px;
+	}
+
+	.nav-links li a {
+		margin: 15px 0;
+	}
+	/*
+========= NAV BAR CSS END HERE ===========
+*/
+}
