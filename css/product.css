@@ -19,6 +19,11 @@
 	border-radius: 20px;
 }
 
+.product-image:hover {
+	filter: brightness(0.9);
+	cursor: pointer;
+}
+
 .product-thumbnails {
 	display: flex;
 	flex-wrap: nowrap;
@@ -38,6 +43,11 @@
 .product-main-image img.fade-in {
 	opacity: 1;
 	transition: opacity 0.3s ease;
+}
+
+.thumbnail-image:hover {
+	border: 1px solid #000000;
+	filter: brightness(0.9);
 }
 
 .thumbnail-image.active {
@@ -116,7 +126,7 @@
 	background-color: hsl(223, 64%, 98%);
 	font-weight: 800;
 	width: 250px;
-	padding: 14px;
+	padding: 10px;
 	border-radius: 5px;
 }
 
@@ -124,8 +134,12 @@
 	background-color: transparent;
 	border: none;
 	color: #f77a26;
-	font-size: 1.2em;
+	font-size: 1.5em;
 	cursor: pointer;
+}
+
+.quantity-buttons button:hover {
+	font-weight: bold;
 }
 
 @media (max-width: 1200px) {
