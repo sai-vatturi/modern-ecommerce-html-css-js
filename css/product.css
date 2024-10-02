@@ -115,7 +115,8 @@
 	color: hsl(223, 64%, 98%);
 	font-weight: 800;
 	opacity: 0.5;
-	margin: 20px 0px;
+	margin-top: 15px;
+	margin-bottom: 40px;
 }
 
 .quantity-buttons {
