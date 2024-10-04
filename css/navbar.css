@@ -217,3 +217,32 @@
 		display: none;
 	}
 }
+@media (max-width: 490px) {
+	.header-container {
+		max-width: 95vw;
+		padding: 10px 0;
+	}
+
+	.header-right {
+		gap: 15px;
+	}
+
+	.header-right cart {
+		height: 12px;
+	}
+
+	.mobile-nav {
+		width: 70%;
+		padding-top: 50px;
+		height: 100vh;
+	}
+
+	.mobile-nav a {
+		font-size: larger;
+		text-decoration: none;
+	}
+
+	.mobile-nav li {
+		margin: 40px 10px;
+	}
+}
