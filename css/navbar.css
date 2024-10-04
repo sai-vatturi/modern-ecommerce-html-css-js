@@ -223,6 +223,13 @@
 		padding: 10px 0;
 	}
 
+	.hamburger-icon {
+		margin-left: 20px;
+	}
+	.header-left {
+		gap: 30px;
+	}
+
 	.header-right {
 		gap: 15px;
 	}
@@ -244,5 +251,15 @@
 
 	.mobile-nav li {
 		margin: 40px 10px;
+	}
+	.cart-dropdown {
+		background-color: white;
+		border-radius: 10px;
+		box-shadow: 5px 4px 12px rgba(0, 0, 0, 0.265);
+		width: 90%;
+		margin: auto;
+		right: 0;
+		left: 0;
+		z-index: 100000;
 	}
 }
